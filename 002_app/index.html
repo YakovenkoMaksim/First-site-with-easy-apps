@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Horoscope</title>
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div id="header">
+        <ul class="navigation">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="https://www.facebook.com/IakovenkoMaksym" target="_blank">Facebook</a></li>
+            <li><a href="https://github.com/YakovenkoMaksim" target="_blank">GitHub</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <h1>Кто Вы по гороскопу?</h1>
+        <h3>Введите дату вашего рождения</h3>
+        <div id="inputBDate">
+            <div class="date">
+                <p>День</p>
+                <input id="inputDate" type="number" placeholder="1" autofocus="" min="1" max="31" />
+            </div>
+            <div class="month">
+                <p>Месяц</p>
+				<input id="inputMonth" type="number" placeholder="1" min="1" max="12" />
+            </div>
+            <div class="year">
+                <p>Год</p>
+                <input id="inputYear" type="text" placeholder="1975" />
+            </div>
+            <div id="button">
+                <button id="sendBtn">Узнать</button>
+            </div>
+        </div>
+    </div>
+	<div class="forError">
+		<p id="forInner"><br></p>
+	</div>
+    <div class="zodiac">
+        <img src="img/zodiacBg.jpg" alt="zodiac">
+    </div>
+    <div id="footer">
+		<img src="img/18plus.png" title="Лицам старше 18">
+    </div>
+</body>
+</html>

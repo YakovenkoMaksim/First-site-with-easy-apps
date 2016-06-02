@@ -1,0 +1,92 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	height: 100%;
+    width: 100%;
+    background-color: black;
+
+}
+
+p, h1, h3, a {
+    font-family: "Courier New", "Times New Roman", serif;
+    color: white;
+}
+
+/* HEADER */
+
+#header {
+    height: 50px;
+    border-bottom: 2px solid #c1bebe;
+}
+
+.navigation li {
+    list-style-type: none;
+    position: relative;
+    float: left;
+    margin-right: 30px;
+    top: 20px;
+    left: 40px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "Courier New", "Times New Roman", serif;
+    padding: 10px 0 11px;
+    width: 128px;
+    color: white;
+}
+
+.navigation li a:hover {
+    font-weight: bold;
+}
+
+.navigation li a:active {
+    font-weight: bold;
+}
+
+/* 	HOROSCOPE */
+
+h1 {
+    font-size: 70px;
+    color: yellow;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+#horoscope {
+	text-align: center;
+}
+
+table {
+	margin: 20px auto;
+}
+
+#horoscope img {
+	height: 150px;
+	width: 150px;
+}
+
+#horoscope p {
+	font-size: 24px;
+	margin: 20px 100px;
+	text-align: justify;
+	text-indent: 50px;
+}
+
+#horoscope a {
+	padding: 50px;
+	text-decoration: none;
+	color: green;
+	font-size: 20px;
+}
+
+#horoscope a:hover {
+	color: orange;
+	border: none;
+}

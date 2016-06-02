@@ -1,0 +1,116 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+
+}
+
+p, h1, h3 {
+    font-family: "Courier New", "Times New Roman", serif;
+    color: black;
+}
+
+/* HEADER */
+
+#header {
+    height: 50px;
+    border-bottom: 2px solid #c1bebe;
+}
+
+.navigation li {
+    list-style-type: none;
+    position: relative;
+    float: left;
+    margin-right: 30px;
+    top: 20px;
+    left: 40px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "Courier New", "Times New Roman", serif;
+    padding: 10px 0 11px;
+    width: 128px;
+    color: black;
+}
+
+.navigation li a:hover {
+    font-weight: bold;
+}
+
+.navigation li a:active {
+    font-weight: bold;
+}
+
+/* CONTENT */
+
+.cloudText {
+    /*outline: 1px solid;*/
+    margin: 20px auto;
+    width: 640px;
+}
+
+.predictionText {
+    float: left;
+    padding-right: 20px;
+}
+
+.predictor {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.predictionText p {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    display: block;
+    margin: 30px auto;
+    width: 640px;
+    padding-top: 25px;
+    padding-left: 48px;
+}
+
+.listenerText p{
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    display: block;
+    margin: 30px auto;
+    width: 640px;
+    padding-top: 5px;
+    padding-left: 385px;
+}
+
+.inputDream {
+    position: absolute;
+    padding-top: 50px;
+    padding-left: 353px; 
+    margin: 20px auto;
+    width: 640px;
+}
+
+#inputDream {
+    font-size: 16px;
+    padding-left: 10px;
+    height: 30px;
+    width: 250px;
+	font-weight: bold;
+}
+
+.inputDream  button {
+    margin-top: 12px;
+    margin-left: 68px;
+}
+
+#dreamBtn {
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+	height: 25px;
+}
