@@ -5,44 +5,91 @@
     <meta charset="utf-8" />
     <link href="css/style.css" rel="stylesheet" />
     <script src="js/script.js"></script>
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="../bootstrap/js/jquery-1.12.4.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div id="header">
-        <ul class="navigation">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="https://www.facebook.com/IakovenkoMaksym" target="_blank">Facebook</a></li>
-            <li><a href="https://github.com/YakovenkoMaksim" target="_blank">GitHub</a></li>
-        </ul>
-    </div>
-    <div id="content">
-        <h1>Кто Вы по гороскопу?</h1>
-        <h3>Введите дату вашего рождения</h3>
-        <div id="inputBDate">
-            <div class="date">
-                <p>День</p>
-                <input id="inputDate" type="number" placeholder="1" autofocus="" min="1" max="31" />
+    <!-- Контейнер с классом "navbar" включает в себя элементы навигации -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+        <!-- Класс "container-fluid" - адаптивный контейнер -->
+        <div class="container-fluid">
+
+            <!-- Блок с кнопкой "Brand" и кнопкой для развертывания меню (для мобильных устройств) -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/index.html">&lt;yakovenko&gt;</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+
+                    <!-- Набор иконок для кнопки -->
+
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
-            <div class="month">
-                <p>Месяц</p>
-				<input id="inputMonth" type="number" placeholder="1" min="1" max="12" />
-            </div>
-            <div class="year">
-                <p>Год</p>
-                <input id="inputYear" type="text" placeholder="1975" />
-            </div>
-            <div id="button">
-                <button id="sendBtn">Узнать</button>
+
+            <!-- Набор ссылок навигации, форм и других элементов меню (в мобильном устройстве будет находится в раскрывающеемся списке) -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="../index.html"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+                    <li><a href="https://www.facebook.com/IakovenkoMaksym" target="_blank"><span class="glyphicon glyphicon-user"></span>Facebook</a></li>
+                    <li><a href="https://github.com/YakovenkoMaksim" target="_blank"><span class="glyphicon glyphicon-save"></span>GitHub</a></li>
+                </ul>
             </div>
         </div>
-    </div>
-	<div class="forError">
-		<p id="forInner"><br></p>
-	</div>
-    <div class="zodiac">
-        <img src="img/zodiacBg.jpg" alt="zodiac">
-    </div>
-    <div id="footer">
-		<img src="img/18plus.png" title="Лицам старше 18">
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 inputDatePlace">
+                <div class="head">
+                    <h1>Кто Вы по гороскопу?</h1>
+                    <h3>Введите дату вашего рождения</h3>
+                </div>
+                <div id="inputBDate">
+                    <table>
+                        <tr>
+                            <td>
+                                <p>День</p>
+                            </td>
+                            <td>
+                                <p>Месяц</p>
+                            </td>
+                            <td>
+                                <p>Год</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input id="inputDate" type="number" placeholder="1" autofocus="" min="1" max="31" />
+                            </td>
+                            <td>
+                                <input id="inputMonth" type="number" placeholder="1" min="1" max="12" />
+                            </td>
+                            <td>
+                                <input id="inputYear" type="text" placeholder="1975" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <button id="sendBtn" class="btn-lg btn-danger">Узнать</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <p id="forInner" class="forError"><br></p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="zodiac">
+                    <img src="img/zodiacBg.png" class="img-responsive" alt="zodiac">
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
