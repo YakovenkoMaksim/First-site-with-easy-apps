@@ -1,0 +1,14 @@
+﻿@import url('../../css/main.css');
+
+img, table {
+    margin: auto;
+}
+
+.col-md-12 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    text-indent: 40px;
+}

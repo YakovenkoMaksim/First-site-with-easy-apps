@@ -1,0 +1,19 @@
+﻿/* Стили главного меню */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 80px;
+}
+
+.glyphicon {
+    padding-right: 5px;
+}
+
+/* делаем ссылку некликабельной */
+.disabled a {
+    pointer-events: none;
+}
