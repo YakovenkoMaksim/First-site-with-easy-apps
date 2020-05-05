@@ -52,7 +52,8 @@
     padding-left: 10px;
     height: 30px;
     width: 250px;
-	font-weight: bold;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 .inputDream  button {
@@ -61,8 +62,9 @@
 }
 
 #dreamBtn {
-	background-color: blue;
-	color: white;
+    border-radius: 5px;
+	color: black;
 	font-weight: bold;
-	height: 25px;
+    height: 25px;
+    padding: 0 5px;
 }
